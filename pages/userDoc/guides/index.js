@@ -1,4 +1,4 @@
-import Header from "../../../src/userDoc/UserDocHeader"
+import Header from "../../../srcuserDocuserDocHeader"
 import Footer from "../../../src/Footer"
 
 
@@ -56,14 +56,14 @@ export default function UserDocStartingPage() {
 <ul>
 <li><a href="https://github.com/pm4knime/pm4knime-document/wiki/Demo-Process-Discovery">Demo Process Discovery</a>
 <ul>
-<li><a href="/userDoc/guides/demos/conformance">Demo Conformance Checking</a></li>
-<li><a href="/userDoc/guides/demos/logManipulation">Demo Log Manipulation</a></li>
-<li><a href="/userDoc/guides/demos/repetiveExecution">Demo Repetitive Execution of Workflow</a></li>
-<li><a href="/userDoc/guides/demos/parameterOptimization">Demo Parameter Optimization</a></li>
-<li><a href="/userDoc/guides/demos/organizationOnWorkflow">Demo Organization on-Workflow</a></li>
+<li><a href="userDoc/guides/demos/conformance">Demo Conformance Checking</a></li>
+<li><a href="userDoc/guides/demos/logManipulation">Demo Log Manipulation</a></li>
+<li><a href="userDoc/guides/demos/repetiveExecution">Demo Repetitive Execution of Workflow</a></li>
+<li><a href="userDoc/guides/demos/parameterOptimization">Demo Parameter Optimization</a></li>
+<li><a href="userDoc/guides/demos/organizationOnWorkflow">Demo Organization on-Workflow</a></li>
 <li><a href="https://github.com/pm4knime/pm4knime-document/wiki/Demo-Work-with-KNIME-Nodes">Demo Work with KNIME Nodes</a></li>
-<li><a href="/userDoc/guides/demos/workWithJava">Demo Work with Java Programming</a></li>
-<li><a href="/userDoc/guides/demos/workWithPython">Demo Work with Python Programming</a></li>
+<li><a href="userDoc/guides/demos/workWithJava">Demo Work with Java Programming</a></li>
+<li><a href="userDoc/guides/demos/workWithPython">Demo Work with Python Programming</a></li>
 </ul>
 </li>
 </ul>

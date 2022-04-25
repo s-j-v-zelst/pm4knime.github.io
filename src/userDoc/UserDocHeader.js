@@ -44,34 +44,34 @@ const Navigation = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto">
-      <Nav.Link href="/userDoc">Home</Nav.Link>
+      <Nav.Link href="userDoc">Home</Nav.Link>
     </Nav>
     <Nav>
       <NavDropdown title="Guideline for normal user" id="collasible-nav-dropdown">
-      <NavDropdown.Item href="/userDoc/guides">Introduction Guides</NavDropdown.Item>
-      <NavDropdown.Item href="/userDoc/guides/features">PM4KNIME Features</NavDropdown.Item>
+      <NavDropdown.Item href="userDoc/guides">Introduction Guides</NavDropdown.Item>
+      <NavDropdown.Item href="userDoc/guides/features">PM4KNIME Features</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="/userDoc/guides/installation">Installation Instructions</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/importantConcepts">KNIME Important Concepts</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/bugReport">Bug Report</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/installation">Installation Instructions</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/importantConcepts">KNIME Important Concepts</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/bugReport">Bug Report</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="/userDoc/guides/knimeServer">KNIME Server Usage</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/knimeServer">KNIME Server Usage</NavDropdown.Item>
       </NavDropdown>
     </Nav>
     <Nav>
       <NavDropdown title="Usage Examples" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="/userDoc/guides/demos/">Introduction Demos</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/demos/processDiscovery">Process Discovery</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/demos/conformance">Confromance</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/demos/logManipulation">Log Manipulation</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/">Introduction Demos</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/processDiscovery">Process Discovery</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/conformance">Confromance</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/logManipulation">Log Manipulation</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="/userDoc/guides/demos/repetiveExecution">Repetitive Execution of Workflow</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/demos/parameterOptimization">Parameter Optimization</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/demos/organizationOnWorkflow">Organization on Workflow</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/repetiveExecution">Repetitive Execution of Workflow</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/parameterOptimization">Parameter Optimization</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/organizationOnWorkflow">Organization on Workflow</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="/userDoc/guides/demos/knimeNodes">KNIME Nodes</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/demos/workWithJava">Working with Java</NavDropdown.Item>
-        <NavDropdown.Item href="/userDoc/guides/demos/workWithPython">Working with Python</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/knimeNodes">KNIME Nodes</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/workWithJava">Working with Java</NavDropdown.Item>
+        <NavDropdown.Item href="userDoc/guides/demos/workWithPython">Working with Python</NavDropdown.Item>
 
       </NavDropdown>
     </Nav>
