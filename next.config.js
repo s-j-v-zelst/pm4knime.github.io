@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     loader: 'akamai',
     path: '/',},
-    basePath:"/pm4knime-webpage-2",
-    assetPrefix: "/pm4knime-webpage-2/"
+    basePath:'/pm4knime-webpage-2',
+    assetPrefix: '/pm4knime-webpage-2/'
 
 }
 
