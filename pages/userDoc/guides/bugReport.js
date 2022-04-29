@@ -1,5 +1,6 @@
 import Header from "../../../src/userDoc/UserDocHeader"
 import Footer from "../../../src/Footer"
+import Link from 'next/link'
 
 
 
@@ -12,7 +13,7 @@ export default function BugReport() {
 
         <div className ="section">
         <div>
-            <p>This section provides the Email template to report bugs on PM4KNIME, aiming to benefit the easy communication and clear problem report. Before you report bugs, please make sure your current version the newest. To use the newest version, update or install it with the <a href="https://github.com/pm4knime/pm4knime-document/wiki/Installation-Instructions">instruction</a>.</p>
+            <p>This section provides the Email template to report bugs on PM4KNIME, aiming to benefit the easy communication and clear problem report. Before you report bugs, please make sure your current version the newest. To use the newest version, update or install it with the <Link href="/userDoc/guides/installation"><a>instruction</a></Link>.</p>
             <h2><a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#pm4knime-bug-report-in-email"></a></h2>
             <h2>PM4KNIME bug report in Email</h2>
             <p>Email address: pm4knime@pads.rwth-aachen.de&nbsp;</p>

@@ -1,5 +1,6 @@
 import Header from "../../src/userDoc/UserDocHeader"
 import Footer from "../../src/Footer"
+import Link from 'next/link'
 
 
 
@@ -14,7 +15,7 @@ export default function UserDocStartingPage() {
     <div>
         <div>
             <p>Welcome to the pm4knime wiki! This wiki is created along the project PM4KNIME to provide users guide on installing, applying, and enhancing PM4KNIME.</p>
-            <h1><a href="https://github.com/pm4knime/pm4knime-document/wiki#project-description"></a></h1>
+            <h1>   <Link href={"/userDoc/"}><a></a></Link></h1>
             <h1>Project Description</h1>
             <p>In the last decades, process mining, as the bridge between data mining and business process management, has gained more and more attention from both the academy and industries. Multiple tools are developed to support process mining techniques. Among them, <a href="http://www.promtools.org/doku.php" rel="nofollow">ProM</a> is an open-source framework to support process mining techniques. &nbsp;With over 600 plugins, it is the most popular scientific process mining tool nowadays. However, configured by users with the graphical user interface before each execution, ProM has drawbacks to conduct, share or reuse large-scale or repetitive experiments.</p>
             <p><a href="https://www.knime.com/" rel="nofollow">KNIME</a> is designed to compose and execute a series of data manipulation steps, namely a workflow, in scientific application. By combining this analytical workflow with process mining domain, it enables the support of large-scale experiments in process mining.</p>

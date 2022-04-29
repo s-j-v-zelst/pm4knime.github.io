@@ -50,12 +50,23 @@ const Navigation = () => {
     </Nav>
     <Nav>
       <NavDropdown title="User Documentation" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="userDoc">Home</NavDropdown.Item>
-        <NavDropdown.Item href="userDoc/guides">Introduction Guides</NavDropdown.Item>
-        <NavDropdown.Item href="userDoc/guides/demos/">Demos</NavDropdown.Item>
+        <Link href="/userDoc" passHref>
+        <NavDropdown.Item >Home</NavDropdown.Item>
+
+        </Link>
+        <Link href="/userDoc/guides" passHref>
+        <NavDropdown.Item>Introduction Guides</NavDropdown.Item>
+        </Link>
+        <Link href="/userDoc/guides/demos" passHref>
+        <NavDropdown.Item >Demos</NavDropdown.Item>
+        </Link>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="userDoc/guides/bugReport">Bug Report</NavDropdown.Item>
-        <NavDropdown.Item href="userDoc/guides/knimeServer">KNIME Server Usage</NavDropdown.Item>
+        <Link href="/userDoc/guides/bugReport" passHref>
+        <NavDropdown.Item >Bug Report</NavDropdown.Item>
+        </Link>
+        <Link href="/userDoc/guides/knimeServer" passHref>
+        <NavDropdown.Item >KNIME Server Usage</NavDropdown.Item>
+        </Link>
       </NavDropdown>
     </Nav>
   </Navbar.Collapse>
