@@ -34,12 +34,14 @@ const Navigation = () => {
                  className="d-inline-block align-top" alt=""/>
         </a>
 
-        <a className="navbar-brand pl-4 pr-4" style={{paddingLeft:"15px"}} href="/">
-        <img src="/assets/pm4knimeLogo.png" width="auto" height="30"
+        <Link href="/">
+        <a className="navbar-brand pl-4 pr-4" style={{paddingLeft:"15px"}} >
+        <img src="assets/pm4knimeLogo.png" width="auto" height="30"
                  className="d-inline-block align-top" alt=""
                  />
             PM4KNIME
         </a>
+        </Link>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
