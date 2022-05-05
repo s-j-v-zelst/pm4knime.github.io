@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Header from "../src/Header";
 import Footer from "../src/Footer";
+import { basePath } from "../next.config";
 export default function Home() {
   return (
     <>
@@ -12,7 +13,7 @@ export default function Home() {
           <div className="row">
             <div className="col-12 text-center">
               <img
-                src="assets/pm4knimeLogo.png"
+                src={basePath + "/assets/pm4knimeLogo.png"}
                 height="100"
                 width="auto"
                 className="d-inline text-center"
@@ -29,8 +30,8 @@ export default function Home() {
                   target="_blank"
                 >
                   process mining research group
-                </a>
-                of
+                </a>{" "}
+                of{" "}
                 <a href="http://fit.fraunhofer.de/" target="_blank">
                   Fraunhofer FIT
                 </a>
@@ -66,7 +67,7 @@ export default function Home() {
           <div className="row">
             <div className="col-12">
               <img
-                src="assets/pm4knime-screenshot.png"
+                src={basePath + "/assets/pm4knime-screenshot.png"}
                 className="img-fluid img-shadow"
                 alt="Responsive image"
               />
@@ -179,7 +180,7 @@ export default function Home() {
               Get in touch if you have any questions or custom request
               (pm4knime@fit.fraunhofer.de).
               <h2>
-                <a href="mailto:pm4knime@pads.rwth-aachen.de">
+                <a href="mailto:pm4knime@fit.fraunhofer.de">
                   <i className="fas fa-envelope"></i>
                   email
                 </a>

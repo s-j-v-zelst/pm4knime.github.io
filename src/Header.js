@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import Link from "next/link";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import nextConfig from "../next.config";
 
 const MetaInformation = () => {
+  const basePath = nextConfig.basePath;
   return (
     <Helmet>
       <meta charSet="UTF-8" />
@@ -13,19 +15,19 @@ const MetaInformation = () => {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="assets/pm4knimeLogo.png"
+        href={basePath + "/assets/pm4knimeLogo.png"}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="assets/pm4knimeLogo.png"
+        href={basePath + "/assets/pm4knimeLogo.png"}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="assets/pm4knimeLogo.png"
+        href={basePath + "/assets/pm4knimeLogo.png"}
       />
       <meta
         name="description"
@@ -37,6 +39,8 @@ const MetaInformation = () => {
 };
 
 const Navigation = () => {
+  const basePath = nextConfig.basePath;
+
   return (
     <>
       <Navbar
@@ -52,7 +56,7 @@ const Navigation = () => {
           <Navbar.Brand>
             <a className="navbar-brand" href="https://fit.fraunhofer.de">
               <img
-                src="assets/fit_logo.svg"
+                src={basePath + "/assets/fit_logo.svg"}
                 width="auto"
                 height="30"
                 className="d-inline-block align-top"
@@ -65,7 +69,7 @@ const Navigation = () => {
                 style={{ paddingLeft: "15px" }}
               >
                 <img
-                  src="assets/pm4knimeLogo.png"
+                  src={basePath + "/assets/pm4knimeLogo.png"}
                   width="auto"
                   height="30"
                   className="d-inline-block align-top"
@@ -112,7 +116,7 @@ const Navigation = () => {
   );
 };
 
-export default Header => {
+export default (Header) => {
   return (
     <>
       <MetaInformation></MetaInformation>

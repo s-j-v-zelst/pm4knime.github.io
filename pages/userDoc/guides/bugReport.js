@@ -16,7 +16,7 @@ have the the base url or it does not work
       <Header></Header>
       <div className="container">
         <div className="section">
-          <div>
+          <div className="row-userDoc">
             <h1>Bug Report in PM4KNIME</h1>
             <p>
               This section provides the Email template to report bugs on
@@ -33,7 +33,7 @@ have the the base url or it does not work
               <a href="https://github.com/pm4knime/pm4knime-document/wiki/Bug-Report-Template#the-exception-screenshot-is"></a>
             </h2>
             <h2>PM4KNIME bug report in Email</h2>
-            <p>Email address: pm4knime@pads.rwth-aachen.de&nbsp;</p>
+            <p>Email address: pm4knime@fit.fraunhofer.de&nbsp;</p>
             <p>
               node ##XXX Node## with exception <code>Exception X</code>
             </p>
