@@ -5,8 +5,7 @@ const nextConfig = {
     loader: "akamai",
     path: "/",
   },
-  basePath: "/pm4knime-webpage",
-  assetPrefix: "/pm4knime-webpage/",
+  basePath: "/",
 };
 
 module.exports = nextConfig;
