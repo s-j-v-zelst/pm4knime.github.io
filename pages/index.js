@@ -139,18 +139,14 @@ export default function Home() {
           <div className="row">
             <div className="col-12">
               <h1 className="section-header">
-                Download to the plugin
-                <i className="fas fa-download ml-3 icon-color"></i>
+                Download in KNIME hub
+                <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
+                  <i
+                    className="fas fa-download ml-3 icon-color"
+                    style={{ marginLeft: 10 }}
+                  ></i>
+                </a>
               </h1>
-            </div>
-          </div>
-          <div className="row mt-5 mb-2 flex-fill">
-            <div className="col-md-4 text-center">
-              <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
-                <i className="fas fa-download ml-3 icon-color"></i>
-                <br />
-                Download
-              </a>
             </div>
           </div>
 
