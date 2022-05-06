@@ -82,10 +82,7 @@ const Navigation = () => {
               </Link>
             </Nav>
             <Nav>
-              <NavDropdown
-                title="Guideline for normal user"
-                id="collasible-nav-dropdown"
-              >
+              <NavDropdown title="Getting Started" id="collasible-nav-dropdown">
                 <Link href="/userDoc/guides/" passHref>
                   <NavDropdown.Item>Introduction Guides</NavDropdown.Item>
                 </Link>
@@ -109,7 +106,7 @@ const Navigation = () => {
               </NavDropdown>
             </Nav>
             <Nav>
-              <NavDropdown title="Usage Examples" id="collasible-nav-dropdown">
+              <NavDropdown title="Examples" id="collasible-nav-dropdown">
                 <Link href="/userDoc/guides/demos" passHref>
                   <NavDropdown.Item>Introduction Demos</NavDropdown.Item>
                 </Link>

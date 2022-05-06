@@ -1,7 +1,11 @@
 import Header from "../../../src/userDoc/UserDocHeader";
 import Footer from "../../../src/Footer";
+import Image from "next/image";
+import nextConfig from "../../../next.config";
 
 export default function Installation() {
+  const baseUrl = nextConfig.basePath;
+
   return (
     <>
       <Header></Header>
@@ -27,10 +31,10 @@ export default function Installation() {
             </p>
             <h2>&nbsp;</h2>
             <h2>KNIME Analaytic Platform Installation</h2>
-            <p>This is the installation for the normal user of pm4knime.</p>
+            <p>This is the installation for the normal user of PM4KNIME.</p>
             <ul>
               <li>
-                <a href="https://www.knime.org" rel="nofollow">
+                <a href="https://www.knime.com/" rel="nofollow">
                   KNIME
                 </a>{" "}
                 version 4.0 or higher The KNIME installation can be found in{" "}
@@ -40,8 +44,8 @@ export default function Installation() {
                 . It includes three steps:
                 <ul>
                   <li>
-                    <a href="https://www.knime.org" rel="nofollow">
-                      Step 1
+                    <a href="https://www.knime.com/" rel="nofollow">
+                      Step 1 (Optional)
                     </a>
                     : asks for the registration on KNIME to support future
                     updates and help. You can skip it and go directly to
@@ -68,91 +72,37 @@ export default function Installation() {
             </ul>
             <h2>&nbsp;</h2>
             <h2>PM4KNIME installation</h2>
-            <p>
-              The general installation for KNIME extension is described in the{" "}
-              <a href="https://www.knime.com/downloads/update" rel="nofollow">
-                link
-              </a>
-              . Here, we briefly specify those steps for PM4KNIME extension.
-            </p>
             <ol>
               <li>
-                Goto <strong>Help</strong> &gt;{" "}
-                <strong>Install new software..</strong>, after running KNIME.
-              </li>
-              <li>
-                Press <strong>add</strong> button, open Dialog{" "}
-                <strong>Add Repository</strong>.
-              </li>
-              <li>
-                Set the installation location for PM4KNIME.
-                <br /> As explained in the KNIME{" "}
-                <a href="https://www.knime.com/downloads/update" rel="nofollow">
-                  link
-                </a>
-                , there are two ways to install community extension, one is with{" "}
-                <strong>url</strong>, the other is with <strong>local</strong>.
-                Because PM4KNIME is available on KNIME community, so we can use
-                the default update site in KNIME, which is also shown in the
-                screenshot.
-                <br /> KNIME Community Extension(Experimental) :{" "}
-                <a
-                  href="http://update.knime.com/community-contributions/4.1"
-                  rel="nofollow"
-                >
-                  http://update.knime.com/community-contributions/4.1
+                {" "}
+                Go to{" "}
+                <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
+                  {" "}
+                  PM4KNIME extension page
                 </a>
               </li>
+              <li>
+                Drag and drop the extension icon into KNIME application into a
+                workflow
+                <div className={"image-container"}>
+                  <p>
+                    <Image
+                      src={
+                        baseUrl + "/assets/images/Installation/DragAndDrop.png"
+                      }
+                      layout="fill"
+                      alt="Exception screenshot"
+                    ></Image>
+                  </p>
+                </div>
+              </li>
+              <li>
+                Say yes to "Do you want to search and install the extension
+                'Process Mining Extension'"
+              </li>
+              <li>Follow the Dialog and install the extension</li>
             </ol>
-            <p>
-              <img
-                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/PM4KNIME-set-community-extension-website.png"
-                alt="image"
-                className="img-fluid img-shadow"
-              />
-            </p>
-            <p>
-              If this website is not listed in "Available Software Sites", you
-              can add the community experimental website by clicking on Add in
-              the right panel and choosing
-            </p>
-            <ul>
-              <li>
-                <strong>URL</strong> installation
-                <ol>
-                  <li>Set Name = KNIME Community Extension(Experiemental)</li>
-                  <li>
-                    Set Location ={" "}
-                    <code>
-                      http://update.knime.com/community-contributions/4.1
-                    </code>
-                  </li>
-                  <li>
-                    Click "OK" to return the previous dialog{" "}
-                    <strong>Available Software</strong>
-                  </li>
-                </ol>
-              </li>
-            </ul>
-            <ol start="4">
-              <li>
-                Click <strong>Work with</strong> to select the download location
-                created before. Sometimes, it takes some time to show the
-                extension from the location.
-                <br />{" "}
-                <img
-                  src="https://github.com/pm4knime/pm4knime-document/raw/master/images/PM4KNIME-install-feature.png"
-                  alt="image"
-                  className="img-fluid img-shadow"
-                />
-              </li>
-              <li>Follow the installation by clicking next.</li>
-              <li>
-                With <strong>Security Warning</strong>, click{" "}
-                <strong>install anyway</strong> to continue the installation.
-              </li>
-              <li>Restart KNIME</li>
-            </ol>
+
             <h3>&nbsp;</h3>
             <h3>PM4KNIME Updates and Uninstall</h3>
             <p>
