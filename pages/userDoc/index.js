@@ -9,7 +9,7 @@ export default function UserDocStartingPage() {
       <div className="container">
         <div className="section">
           <div>
-            <div>
+            <div className="row-userDoc">
               <p>
                 Welcome to the PM4KNIME end user documentation! This end user
                 documentation is created along the project PM4KNIME to provide

@@ -3,10 +3,10 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     loader: "akamai",
-    path: "/"
+    path: "/",
   },
-  basePath: "/pm4knime-webpage-2",
-  assetPrefix: "/pm4knime-webpage-2/"
+  basePath: "/pm4knime-webpage",
+  assetPrefix: "/pm4knime-webpage/",
 };
 
 module.exports = nextConfig;

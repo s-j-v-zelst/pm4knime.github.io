@@ -135,9 +135,10 @@ have the the base url or it does not work
           </div>
           <div className="row-userDoc">
             <p>
-              Log Manipulation The nodes in this category manipulate an event
-              log object and provides functionalities, like filtering, sampling,
-              merging and classifying log. More details are listed below.
+              <p>Log Manipulation</p> The nodes in this category manipulate an
+              event log object and provides functionalities, like filtering,
+              sampling, merging and classifying log. More details are listed
+              below.
             </p>
             <table className="styled-table">
               <thead>
@@ -300,6 +301,56 @@ have the the base url or it does not work
                   </td>
                   <td>replayer result in alignment</td>
                   <td>precision statistical info</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="row-userDoc">
+            <p>GraphViz visualization</p>
+            This nodes offer a GraphViz JavaScript visualization of the process
+            models, which can be further used in KNIME Server.
+            <table className="styled-table">
+              <thead>
+                <tr>
+                  <th>Node Name</th>
+                  <th>Function</th>
+                  <th>Input Type</th>
+                  <th>Output Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Visualize DFM (GraphViz)</td>
+                  <td>
+                    This node implements a JavaScript Visualization of a
+                    Directly Follows Model.
+                    <br />
+                    It visualizes all possible traces (order of activities). The
+                    green nodes are the start activities and the red activities
+                    are the end activity. The number on the arcs that connect to
+                    another activity displays the number of traces that choose
+                    the following activity after the current activity.
+                  </td>
+                  <td>Input Directly Follows Miner</td>
+                  <td> Javascript GraphViz visualization</td>
+                </tr>
+                <tr>
+                  <td>Visualize PN (GraphViz)</td>
+                  <td>
+                    This node implements a JavaScript Visualization of a Petri
+                    Net.
+                  </td>
+                  <td>Input Petri Net</td>
+                  <td>JavaScript GraphViz visualization PN</td>
+                </tr>
+                <tr>
+                  <td>Visualize PT (GraphViz)</td>
+                  <td>
+                    This node implements a JavaScript Visualization of a Process
+                    Tree.
+                  </td>
+                  <td>Input Process Tree</td>
+                  <td>JavaScript GraphViz visualization ProcessTree</td>
                 </tr>
               </tbody>
             </table>
