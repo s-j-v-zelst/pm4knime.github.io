@@ -7,9 +7,11 @@ export default function ProcessDiscovery() {
       <Header></Header>
       <div className="container">
         <div className="section">
-          <div class="Layout-main" data-view-component="true">
-            <div id="wiki-body" class="gollum-markdown-content">
-              <div class="markdown-body">
+          <div className="Layout-main" data-view-component="true">
+            <div id="wiki-body" className="gollum-markdown-content">
+              <div className="markdown-body">
+                <h1>Process Discovery</h1>
+
                 <p>
                   In this part, the demand to discover a process model is shown
                   at first. Next, the concrete workflow is provided as one
