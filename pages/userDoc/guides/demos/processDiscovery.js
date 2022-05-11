@@ -165,17 +165,27 @@ export default function ProcessDiscovery() {
                     <li>Click OK to close the configuration dialog.</li>
                     <li>Execute the nodes.</li>
                     <li>
-                      Check the generated Petri net in output port. An accepting
-                      Petri net is given as the result.{" "}
-                      <img
-                        title="Generated Petri net from Inductive Miner"
-                        src="https://github.com/pm4knime/pm4knime-document/raw/master/images/InductiveMiner-result-01.PNG"
-                        alt="image"
-                        className="img-fluid img-shadow"
-                      />
+                      Check the generated Process Tree in output port. An
+                      Process Tree is given as the result.{" "}
+                      <p>
+                        <Image
+                          src={
+                            basePath +
+                            "/assets/images/processDiscovery/ProcessTreeResult.jpg"
+                          }
+                          width="700px"
+                          height="550px"
+                          alt="InductiveMinerDialog.jpg"
+                          className="img-fluid img-shadow"
+                        ></Image>
+                      </p>
                     </li>
                   </ul>
-                  <ol start="5">
+                  <ol start="6">
+                    Click the run Button on the ProcessTree to Petri Net
+                    Converter node.
+                  </ol>
+                  <ol start="7">
                     <li>
                       Export the generate Petri net with node{" "}
                       <strong>Petrinet Writer</strong>.
