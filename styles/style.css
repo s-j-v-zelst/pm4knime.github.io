@@ -1,5 +1,9 @@
 .color-nav {
     background-color: rgba(240, 240, 242, .9);
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+
 }
 
 
