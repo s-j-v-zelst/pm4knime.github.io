@@ -1,197 +1,190 @@
 import Header from "../../../../src/userDoc/UserDocHeader";
 import Footer from "../../../../src/Footer";
+import { basePath } from "../../../../next.config";
+import Image from "next/image";
 
 export default function Conformance() {
   return (
     <>
       <Header></Header>
-      <div className="container">
-        <div className="section">
-          <div class="Layout-main" data-view-component="true">
-            <div id="wiki-body" class="gollum-markdown-content">
-              <div class="markdown-body">
-                <div class="Layout-main" data-view-component="true">
-                  <div id="wiki-body" class="gollum-markdown-content">
-                    <div class="markdown-body">
-                      <p>
-                        In this part, the demand to do conformance checking is
-                        shown at first. Conformance checking needs a process
-                        model and an event log as inputs. But in reality, an
-                        event log is possibly not provided directly in .xes
-                        format, instead, in CSV file. The following concrete
-                        workflow is provided as one sample to deal with this
-                        situation.
-                      </p>
-                      <p>
-                        <img
-                          src="https://github.com/pm4knime/pm4knime-document/raw/master/images/demo-simple-conformance-check.PNG"
-                          alt=""
-                          width="400px"
-                          height="200px"
-                          className="img-fluid img-shadow"
-                        />
-                      </p>
-                      <p>One example workflow with PM4KNIME is shown below:</p>
-                      <p>
-                        <img
-                          src="https://github.com/pm4knime/pm4knime-document/raw/master/images/demo-simple-conformance-check-wf.PNG"
-                          alt=""
-                          width="600px"
-                          height="300px"
-                          className="img-fluid img-shadow"
-                        />
-                      </p>
-                      <p>
-                        To create the workflow shown above, the following steps
-                        are required.
-                      </p>
-                      <ol>
-                        <li>
-                          Download the{" "}
-                          <a href="https://github.com/pm4knime/pm4knime-document/blob/master/dataset/chapter_1.zip">
-                            dataset
-                          </a>
-                          . Extract the CSV file{" "}
-                          <code>running-example.csv</code> from the downloaded
-                          dataset.
-                        </li>
-                        <li>
-                          Import the CSV file into KNIME with node{" "}
-                          <strong>CSV Reader</strong>. The detail on this node
-                          can be found in the{" "}
-                          <a
-                            href="https://nodepit.com/node/org.knime.base.node.io.csvreader.CSVReaderNodeFactory"
-                            rel="nofollow"
-                          >
-                            link
-                          </a>
-                          .
-                        </li>
-                      </ol>
-                      <ul>
-                        <li>
-                          Configure the settings like this dialog{" "}
-                          <img
-                            src="https://github.com/pm4knime/pm4knime-document/raw/master/images/CSVReader-configuration-01.PNG"
-                            alt="image"
-                            className="img-fluid img-shadow"
-                          />
-                        </li>
-                        <li>
-                          Execute the node and get the Data table.{" "}
-                          <img
-                            src="https://github.com/pm4knime/pm4knime-document/raw/master/images/CSVReader-result-01.PNG"
-                            alt="image"
-                            className="img-fluid img-shadow"
-                          />
-                        </li>
-                      </ul>
-                      <ol start="3">
-                        <li>
-                          Convert the Data table into event log with the node{" "}
-                          <strong>Table2XLog Converter</strong>.
-                        </li>
-                      </ol>
-                      <ul>
-                        <li>
-                          In the Option Tab, we set the necessary attributes to
-                          generate an event log.{" "}
-                          <img
-                            src="https://github.com/pm4knime/pm4knime-document/raw/master/images/CSV2LogConverter-configuration-01.PNG"
-                            alt="image"
-                            className="img-fluid img-shadow"
-                          />
-                        </li>
-                        <li>
-                          In Choose attribute set Tab, we choose optional
-                          attributes for the event log.{" "}
-                          <img
-                            src="https://github.com/pm4knime/pm4knime-document/raw/master/images/CSV2LogConverter-configuration-02.PNG"
-                            alt="image"
-                            className="img-fluid img-shadow"
-                          />
-                        </li>
-                        <li>Execute the node and we get the event log.</li>
-                      </ul>
-                      <ol start="4">
-                        <li>
-                          Import the Petri net which is generated from the last
-                          step.
-                        </li>
-                        <li>
-                          Replay the event log on Petri net
-                          <ul>
-                            <li>
-                              Connect the{" "}
-                              <strong>Alignment-Based Replayer(Default)</strong>{" "}
-                              with the event log and Petri net output.
-                            </li>
-                            <li>
-                              Configure the node with the settings{" "}
-                              <img
-                                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/ReplayerDefault-configuration.PNG"
-                                alt="image"
-                                className="img-fluid img-shadow"
-                              />
-                            </li>
-                            <li>
-                              Execute the nodes and check the result in
-                              alignment{" "}
-                              <img
-                                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/Alignment-result-01.PNG"
-                                alt="image"
-                                className="img-fluid img-shadow"
-                              />
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          Check the fitness and precision on the Petri net and
-                          event.
-                          <ul>
-                            <li>
-                              Connect the alignment result with{" "}
-                              <strong>Fitness Checker</strong>. Here no
-                              parameter is required.{" "}
-                              <img
-                                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/Fitness-result.PNG"
-                                alt="image"
-                                className="img-fluid img-shadow"
-                              />{" "}
-                              One view is provided to show the projection on
-                              Petri net.{" "}
-                              <img
-                                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/Fitness-result-view.PNG"
-                                alt="image"
-                                className="img-fluid img-shadow"
-                              />
-                            </li>
-                            <li>
-                              Connect the alignment result with{" "}
-                              <strong>Precision Checker</strong>, given the
-                              setting{" "}
-                              <img
-                                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/Precision-configuration.PNG"
-                                alt="image"
-                                className="img-fluid img-shadow"
-                              />{" "}
-                              <img
-                                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/Precision-result.PNG"
-                                alt="image"
-                                className="img-fluid img-shadow"
-                              />
-                            </li>
-                          </ul>
-                        </li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="section">
+        <div className="container">
+          <Image
+            style={{ marginBottom: 0 }}
+            src={
+              basePath +
+              "/assets/images/conformanceChecking/demo-simple-conformance-check.png"
+            }
+            width="400px"
+            height="100px"
+            alt="demo-simple-conformance-check"
+            className="img-fluid img-shadow"
+          ></Image>
+          <p>
+            In this part, the demand to do conformance checking is shown at
+            first. Conformance checking needs a process model and an event log
+            as inputs. In this we will provide a process model and event log to
+            do a fitness and precision evaluation.
+          </p>
+          <h1>Preparations</h1>
+          <div className="new-wrapper">
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/conformanceChecking/demo-simple-conformance-check-wf.png"
+              }
+              width="1280px"
+              height="720px"
+              alt="demo-simple-conformance-check"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p>
+              {" "}
+              To create a workflow, which evaluates a process model, we first
+              download the dataset Download the{" "}
+              <a href="https://github.com/pm4knime/pm4knime-document/blob/master/dataset/chapter_1.zip">
+                dataset
+              </a>
+              . Extract the xes file <code>running-example.xes</code> from the
+              downloaded dataset.
+            </p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath + "/assets/images/processDiscovery/XESReaderDialog.jpg"
+              }
+              width="1280px"
+              height="720px"
+              alt="demo-simple-conformance-check"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p> Than we read the xes file with the help of the XES Reader</p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath + "/assets/images/processDiscovery/InspectEventLog.jpg"
+              }
+              width="1280px"
+              height="720px"
+              alt="demo-simple-conformance-check"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p>
+              The log should consist of the activities "decide", "check ticket"
+              etc.
+            </p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/conformanceChecking/reading PNML file.png"
+              }
+              width="1280px"
+              height="720px"
+              alt="demo-simple-conformance-check"
+              className="img-fluid img-shadow"
+            ></Image>{" "}
+            <p>
+              {" "}
+              Than we read to Petri Net from the giving dataset with the help of
+              the PNML Reader.
+            </p>
+          </div>
+          After the preparations we come to the actual conformance checking
+          part. For that we first generate our alignments and feed them to our
+          precision and fitness nodes respectfully. We first start with the
+          fitness view.
+          <h1>Fitness</h1>
+          <div className="new-wrapper">
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/conformanceChecking/alignmentbaseReplayer.png"
+              }
+              width="1280px"
+              height="720px"
+              alt="alignmentbaseReplayer"
+              className="img-fluid img-shadow"
+            ></Image>{" "}
+            <p>
+              With the help of the Alignment-Based Replayer node we can create
+              our alignments. For that example we take as "Classifier Name"
+              "#Event Attribute #concept:name" and select replay strategy "ILP
+              Replayer", with the default values. For further inside the replay
+              results can be checked inside of the node.
+            </p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/conformanceChecking/fitnessCheckerInformation.jpg"
+              }
+              width="1280px"
+              height="720px"
+              alt="alignmentbaseReplayer"
+              className="img-fluid img-shadow"
+            ></Image>{" "}
+            <p>
+              {" "}
+              After executing the "Fitness Checker" we should get statistics
+              about the fitness
+            </p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/conformanceChecking/fitnessCheckerModelView.jpg"
+              }
+              width="1280px"
+              height="720px"
+              alt="alignmentbaseReplayer"
+              className="img-fluid img-shadow"
+            ></Image>{" "}
+            <p>
+              {" "}
+              With the "Projection View" on the node it is also possible to see
+              the fitness on the model.
+            </p>
+          </div>
+          <h1>Precision</h1>
+          <div
+            className="
+          new-wrapper"
+          >
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/conformanceChecking/precisionCheckerDialog.jpg"
+              }
+              width="1280px"
+              height="720px"
+              alt="alignmentbaseReplayer"
+              className="img-fluid img-shadow"
+            ></Image>{" "}
+            <p>
+              {" "}
+              The "Precision Checker" node should be run with the ETC Precision
+              option for this example.
+            </p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/conformanceChecking/precisionCheckerInformation.jpg"
+              }
+              width="1280px"
+              height="720px"
+              alt="alignmentbaseReplayer"
+              className="img-fluid img-shadow"
+            ></Image>{" "}
+            <p>In the view we can than observe the precision of our process.</p>
           </div>
         </div>
       </div>
+
       <Footer></Footer>
     </>
   );

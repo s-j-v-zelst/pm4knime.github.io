@@ -89,9 +89,8 @@ export default function ProcessDiscovery() {
                   <div className="snippet-clipboard-content position-relative overflow-auto">
                     <pre className="notranslate">
                       <code className="notranslate">
-                        * Configure the **Event Log Reader** with the path to
-                        file running-example.xes and click OK to close the
-                        dialog.
+                        * Configure the **XES Reader** with the path to file
+                        running-example.xes and click OK to close the dialog.
                       </code>
                     </pre>
                   </div>
