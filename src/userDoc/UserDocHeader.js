@@ -185,7 +185,7 @@ const Navigation = () => {
 
     setVisible(
       (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 50) ||
+        prevScrollPos - currentScrollPos > 40) ||
         currentScrollPos < 10
     );
 
