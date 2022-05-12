@@ -13,7 +13,7 @@ export default function Conformance() {
             style={{ marginBottom: 0 }}
             src={
               basePath +
-              "/assets/images/conformanceChecking/demo-simple-conformance-check.png"
+              "/assets/images/conformanceChecking/conformance-check.png"
             }
             width="400px"
             height="100px"
@@ -32,7 +32,7 @@ export default function Conformance() {
               style={{ marginBottom: 0 }}
               src={
                 basePath +
-                "/assets/images/conformanceChecking/demo-simple-conformance-check-wf.png"
+                "/assets/images/conformanceChecking/conformance-check-wf.png"
               }
               width="1280px"
               height="720px"
