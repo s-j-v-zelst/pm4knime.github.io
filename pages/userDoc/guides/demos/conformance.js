@@ -36,7 +36,7 @@ export default function Conformance() {
               }
               width="1280px"
               height="720px"
-              alt="demo-simple-conformance-check"
+              alt="demo-simple-conformance-check-wf"
               className="img-fluid img-shadow"
             ></Image>
             <p>
