@@ -16,7 +16,7 @@ export default function Conformance() {
               "/assets/images/conformanceChecking/conformance-check.png"
             }
             width="400px"
-            height="100px"
+            height="225px"
             alt="demo-simple-conformance-check"
             className="img-fluid img-shadow"
           ></Image>
