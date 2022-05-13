@@ -1,5 +1,7 @@
 import Header from "../../../../src/userDoc/UserDocHeader";
 import Footer from "../../../../src/Footer";
+import { basePath } from "../../../../next.config";
+import Image from "next/image";
 
 export default function LogManipulation() {
   return (
@@ -7,180 +9,158 @@ export default function LogManipulation() {
       <Header></Header>
       <div className="container">
         <div className="section">
-          <div class="Layout-main" data-view-component="true">
-            <div id="wiki-body" class="gollum-markdown-content">
-              <div class="markdown-body">
-                <div class="Layout-main" data-view-component="true">
-                  <div id="wiki-body" class="gollum-markdown-content">
-                    <div class="markdown-body">
-                      <p>
-                        In this part, the demand to manipulate an event log is
-                        shown at first. Next, the concrete workflow is provided
-                        as one sample to solve a similar problem.{" "}
-                        <img
-                          src="https://github.com/pm4knime/pm4knime-document/raw/master/images/demo-simple-log-manipulation.PNG"
-                          alt=""
-                          width="500px"
-                          height="100px"
-                          className="img-fluid img-shadow"
-                        />
-                      </p>
-                      <p>One example workflow with PM4KNIME is shown below:</p>
-                      <p>
-                        <img
-                          src="https://github.com/pm4knime/pm4knime-document/raw/master/images/demo-simple-log-manipulation-wf.PNG"
-                          alt=""
-                          width="600px"
-                          height="400px"
-                          className="img-fluid img-shadow"
-                        />
-                      </p>
-                      <p>The steps to create the workflow above are</p>
-                      <ol>
-                        <li>
-                          Download the{" "}
-                          <a href="https://github.com/pm4knime/pm4knime-document/blob/master/dataset/chapter_1.zip">
-                            dataset
-                          </a>{" "}
-                          from github. Extract the event log file{" "}
-                          <code>running-example.xes</code> from the downloaded
-                          dataset.
-                        </li>
-                        <li>
-                          Import <code>running-example-non-conforming.xes</code>{" "}
-                          and <code>running-example-just-two-cases.xes</code>{" "}
-                          into KNIME with two nodes{" "}
-                          <strong>Event Log Reader</strong>.
-                        </li>
-                        <li>
-                          Filter the event log{" "}
-                          <code>running-example-non-conforming.xes</code> with
-                          node <strong>Filter Event Log</strong>. Here, to
-                          filter the traces with Resource "Pete", meanwhile, the
-                          traces without the Resource "Pete" are ignored, the
-                          configuration is set in the next figure.
-                          <br />{" "}
-                          <img
-                            title="Filter Configuration"
-                            src="https://github.com/pm4knime/pm4knime-document/raw/master/images/LogFilter-configuration-01.PNG"
-                            alt="image"
-                            className="img-fluid img-shadow"
-                          />
-                        </li>
-                      </ol>
-                      <p>
-                        After execution, it splits the log into two logs, one is
-                        the log to keep, the other is to dispose.{" "}
-                        <img
-                          title="Kept event log"
-                          src="https://github.com/pm4knime/pm4knime-document/raw/master/images/LogFilter-result-keep.PNG"
-                          alt="image"
-                          className="img-fluid img-shadow"
-                        />
-                      </p>
-                      <p>
-                        <img
-                          title="Disposed event log"
-                          src="https://github.com/pm4knime/pm4knime-document/raw/master/images/LogFilter-result-dispose.PNG"
-                          alt="image"
-                          className="img-fluid img-shadow"
-                        />
-                      </p>
-                      <ol start="4">
-                        <li>
-                          Merge two event logs with node{" "}
-                          <strong>Merge Log</strong>
-                        </li>
-                      </ol>
-                      <ul>
-                        <li>
-                          <p>
-                            Connect the output ports from the filtered event
-                            logs and the imported event log.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Configure with Merge Strategy{" "}
-                            <strong>Separate Trace</strong>, it simply combines
-                            the traces from the two event logs together. Traces
-                            with the same caseID are allowed in the merged event
-                            log.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Configure with Merge Strategy{" "}
-                            <strong>IgnoreTrace</strong>, it ignored the traces
-                            from the second event log with the same caseID from
-                            the first event log.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Configure with Merge Strategy{" "}
-                            <strong>Internal Trace Merge</strong>, for the
-                            traces with the same caseID, it combines the events
-                            from the two traces together. The trace attributes
-                            can be chosen for the new attributes. The next
-                            figure shows the configuration example.{" "}
-                            <img
-                              title="Merge Log with Strategy Internal Trace Merge"
-                              src="https://github.com/pm4knime/pm4knime-document/raw/master/images/LogMerge-configuration-internal-trace-02.PNG"
-                              alt="image"
-                              className="img-fluid img-shadow"
-                            />
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Configure with Merge Strategy{" "}
-                            <strong>Internal Event Merge</strong>, for the
-                            events with the same names in the traces with the
-                            same caseID, it creates one new event and with the
-                            chosen attributs.
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                            Choose strategy{" "}
-                            <strong>Internal Trace Merge</strong> and execute
-                            the node. It results in the merged event log.{" "}
-                            <img
-                              title="Merge Log with Strategy Internal Trace Merge"
-                              src="https://github.com/pm4knime/pm4knime-document/raw/master/images/LogMerge-result-internal-trace-02.PNG"
-                              alt="image"
-                              className="img-fluid img-shadow"
-                            />
-                          </p>
-                        </li>
-                      </ul>
-                      <ol start="5">
-                        <li>
-                          Classify the traces in the event log with certain
-                          attributes.
-                        </li>
-                      </ol>
-                      <ul>
-                        <li>Configure</li>
-                        <li>
-                          Execute the nodes. It outputs the result as following.
-                        </li>
-                      </ul>
-                      <h4>&nbsp;</h4>
-                      <h4>Notice</h4>
-                      <p>
-                        The event log manipulation can be achieved by applying
-                        the KNIME manipulation on Data Table which is converted
-                        from the event log. However, those operations can be
-                        simplified with the node provided before.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <h1>Log Manipulation</h1>
+          <p>
+            In this section, we will demonstrate the use of log manipulation. To
+            be more precise, the usage of splitting and filtering the event log.
+          </p>
+          <Image
+            style={{ marginBottom: 0 }}
+            src={
+              basePath +
+              "/assets/images/logManipulation/demo-simple-log-manipulation.PNG"
+            }
+            width="350px"
+            height="150px"
+            alt="demo-simple-discover.png"
+            className="img-fluid img-shadow"
+          ></Image>
+          <div className="new-wrapper">
+            <Image
+              style={{ marginBottom: 0 }}
+              src={basePath + "/assets/images/logManipulation/complettLog.jpg"}
+              width="450px"
+              height="250px"
+              alt="complettLog.jpg"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p>
+              First, download the dataset from github, after that extract the
+              event log file "running-examples.xes" from the downloaded dataset.
+              Second, import "running-example-non-conforming.xes" and
+              "running-example-just-two-cases.xes" with the "XES Reader" node.
+              After that, connect the "XES Reader" to the "Filter Log By
+              Frequency" node.
+            </p>
           </div>
+
+          <div className="new-wrapper">
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath + "/assets/images/logManipulation/filterLogDialog.jpg"
+              }
+              width="350px"
+              height="150px"
+              alt="filterLogDialog.jpg"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p>
+              Now we connect the node that reads the
+              "running-example-just-two-cases.xes",we configure our "Filter Log
+              By Frequency" node.
+            </p>
+          </div>
+          <p>
+            The option "Keep trace" means that the chosen traces that match the
+            following conditions will be kept. If not selected, the traces
+            matching the conditions will be removed.
+          </p>
+
+          <p>
+            {" "}
+            The option "isForSingleTV" indicates (when checked) if we want to
+            apply the filter on trace variant or on the whole event log(when
+            unchecked).
+          </p>
+
+          <p>
+            {" "}
+            The option "Threshold" defines the threshold to filter. It accepts
+            both percentage and absolute value. With value 0-1.0, it means the
+            percentage in the whole event log size. When it is equal or greater
+            than 1, it represents the absolute integer threshold.After
+            configuration, it will be casted down into an integer value.The
+            trace with equal or greater size than the threshold will be
+            filtered.{" "}
+          </p>
+
+          <p>
+            For that example we check both boxes and choose the threshold to be
+            0,1.
+          </p>
+
+          <div className="new-wrapper">
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath + "/assets/images/logManipulation/filteredEventLog.jpg"
+              }
+              width="350px"
+              height="150px"
+              alt="filteredEventLog.jpg"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p>
+              {" "}
+              After the execution, the log should be trace variant filtered, by
+              a factor of 0,1. The filtered log can be viewed in the log view of
+              the node.
+            </p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={basePath + "/assets/images/logManipulation/complettLog.jpg"}
+              width="450px"
+              height="250px"
+              alt="complettLog.jpg"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p>
+              In the end, we merge the filtered log with the other "XES Reader".
+              Considering our filtered and imported event log, we connect the
+              output ports from the filtered and the imported event log into the
+              "MergeLog" node.
+            </p>
+            <Image
+              style={{ marginBottom: 0 }}
+              src={
+                basePath +
+                "/assets/images/logManipulation/LogMerge-configuration-internal-trace-02.png"
+              }
+              width="450px"
+              height="250px"
+              alt="LogMerge-configuration-internal-trace-02"
+              className="img-fluid img-shadow"
+            ></Image>
+            <p>
+              Inside of the "MergeLog" node we have several merge strategies.
+              <ul>
+                <li>
+                  <b>Seperate Trace</b> it combines the traces from the two
+                  event logs together. Traces with the same caseID are allowed
+                  in the merged event log.
+                </li>
+                <li>
+                  <b>IgnoreTrace</b> it ignores the traces from the second event
+                  log with the same caseID from the first event log.
+                </li>
+                <li>
+                  <b>Internal Trace Merge</b>, for the traces with the same
+                  caseID, it combines the events from the two traces together.
+                  The trace attributes can be chosen for the new attributes. An
+                  Example can be seen on the left.{" "}
+                </li>
+                <li>
+                  <b>Internal Event Merge</b>, for the events with the same
+                  names in the traces with the same caseID, it creates one new
+                  event and with the chosen attributes.
+                </li>
+              </ul>
+            </p>
+          </div>
+          <p>
+            The generated event log can observed in the view of "MergeLog" view.
+          </p>
         </div>
       </div>
       <Footer></Footer>
