@@ -16,6 +16,7 @@ export default function ParameterOptimization() {
                       <div class="Layout-main" data-view-component="true">
                         <div id="wiki-body" class="gollum-markdown-content">
                           <div class="markdown-body">
+                            <h1>Legacy SOme nodes not working anymore</h1>
                             <p>
                               This part demonstrates the demand to optimize one
                               measurement based on parameters. In the example

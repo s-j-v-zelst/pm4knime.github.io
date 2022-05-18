@@ -16,6 +16,9 @@ export default function RepetitiveExecution() {
                       <div class="Layout-main" data-view-component="true">
                         <div id="wiki-body" class="gollum-markdown-content">
                           <div class="markdown-body">
+                            <h1>
+                              Legacy component some thisng are not working
+                            </h1>
                             <p>
                               In this part, the demand to do experiment with
                               different parameters settings is shown at first.

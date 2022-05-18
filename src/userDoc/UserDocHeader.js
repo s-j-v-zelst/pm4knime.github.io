@@ -1,46 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import nextConfig from "../../next.config";
 import { Helmet } from "react-helmet";
 import Link from "next/link";
-import {
-  Navbar,
-  Nav,
-  Container,
-  NavDropdown,
-  NavbarBrand,
-} from "react-bootstrap";
-import { debounce } from "../util/debounce";
-
-const NavbarLogo = ({ style }) => {
-  return (
-    <Navbar className="container-fluid" style={style}>
-      <Navbar.Brand>
-        <a className="navbar-brand" href="https://fit.fraunhofer.de">
-          <img
-            src={nextConfig.basePath + "/assets/fit_logo.svg"}
-            width="auto"
-            height="30"
-            className="d-inline-block align-top"
-            alt=""
-            style={{ alignSelf: "left" }}
-          />
-        </a>
-        <Link href={"/"} passHref>
-          <a className="navbar-brand pl-4 pr-4" style={{ paddingLeft: "15px" }}>
-            <img
-              src={nextConfig.basePath + "/assets/pm4knimeLogo.png"}
-              width="auto"
-              height="30"
-              className="d-inline-block align-top"
-              alt=""
-            />
-            PM4KNIME
-          </a>
-        </Link>
-      </Navbar.Brand>
-    </Navbar>
-  );
-};
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const NavbarFull = ({ style }) => {
   return (
@@ -177,29 +139,6 @@ const MetaInformation = () => {
 };
 
 const Navigation = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  const handleScroll = debounce(() => {
-    const currentScrollPos = window.pageYOffset;
-
-    setVisible(
-      (prevScrollPos > currentScrollPos &&
-        prevScrollPos - currentScrollPos > 40) ||
-        currentScrollPos < 10
-    );
-
-    setPrevScrollPos(currentScrollPos);
-    // timer set to 100 milliseconds:
-  }, 100);
-
-  // new useEffect:
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
-
   const navbarStyles = {
     collapseOnSelect: true,
     expand: "lg",
@@ -209,19 +148,7 @@ const Navigation = () => {
     width: "100%",
   };
 
-  if (!visible) {
-    return (
-      <NavbarLogo
-        style={{ ...navbarStyles, top: visible ? "-60px" : "0" }}
-      ></NavbarLogo>
-    );
-  } else {
-    return (
-      <NavbarFull
-        style={{ ...navbarStyles, top: visible ? "0" : "-60px" }}
-      ></NavbarFull>
-    );
-  }
+  return <NavbarFull style={{ ...navbarStyles }}></NavbarFull>;
 };
 
 export default (Header) => {
