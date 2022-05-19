@@ -8,6 +8,7 @@ export default function WorkWithJava() {
       <Header></Header>
       <div className="container">
         <div className="section">
+          <h1>Working with Java</h1>
           <p>
             KNIME allows the scripting of multiple programming, which provides
             more functionality in flexible ways. In this section, Java
