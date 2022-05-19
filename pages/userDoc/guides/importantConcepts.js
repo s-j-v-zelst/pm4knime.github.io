@@ -50,7 +50,8 @@ export default function ImportantConcept() {
                     basePath +
                     "/assets/images/importantConcept/KNIME-states.PNG"
                   }
-                  layout="fill"
+                  height="200"
+                  width="500"
                   alt="KNIME-states"
                   className="img-fluid img-shadow"
                 ></Image>
@@ -127,17 +128,15 @@ export default function ImportantConcept() {
               </a>
               . <br></br>{" "}
               <div className={"image-container"}>
-                <p>
-                  <Image
-                    src={
-                      basePath +
-                      "/assets/images/importantConcept/KNIME-loop.PNG"
-                    }
-                    layout="fill"
-                    alt="KNIME Loop"
-                    className="img-fluid img-shadow"
-                  ></Image>
-                </p>
+                <Image
+                  src={
+                    basePath + "/assets/images/importantConcept/KNIME-loop.PNG"
+                  }
+                  height="300"
+                  width="500"
+                  alt="KNIME Loop"
+                  className="img-fluid img-shadow"
+                ></Image>
               </div>
             </p>
             <p>Most important things to remember are:</p>

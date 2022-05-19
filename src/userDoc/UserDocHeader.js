@@ -79,11 +79,13 @@ const NavbarFull = ({ style }) => {
             <NavDropdown.Divider />
             <Link href="/userDoc/guides/demos/repetiveExecution" passHref>
               <NavDropdown.Item>
-                Repetitive Execution of Workflow
+                Repetitive Execution of Workflow (Legacy does not work)
               </NavDropdown.Item>
             </Link>
             <Link href="/userDoc/guides/demos/parameterOptimization" passHref>
-              <NavDropdown.Item>Parameter Optimization</NavDropdown.Item>
+              <NavDropdown.Item>
+                Parameter Optimization (Legacy does not work)
+              </NavDropdown.Item>
             </Link>
             <Link href="/userDoc/guides/demos/organizationOnWorkflow" passHref>
               <NavDropdown.Item>Organization on Workflow</NavDropdown.Item>

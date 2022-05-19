@@ -20,11 +20,12 @@ export default function knimeNodes() {
                 "/assets/images/knimeNodes/demo-simple-integrate-in-knime.png"
               }
               width="300px"
-              height="169px"
+              height="130px"
               alt="demo-simple-integrate-in-knime"
               className="img-fluid img-shadow"
             />
           </p>
+
           <div className="new-wrapper">
             <Image
               src={

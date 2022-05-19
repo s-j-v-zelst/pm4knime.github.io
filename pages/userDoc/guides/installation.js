@@ -37,7 +37,7 @@ export default function Installation() {
                 <a href="https://www.knime.com/" rel="nofollow">
                   KNIME
                 </a>{" "}
-                version 4.0 or higher The KNIME installation can be found in{" "}
+                version 4.4 or higher The KNIME installation can be found in{" "}
                 <a href="https://www.knime.com/installation" rel="nofollow">
                   https://www.knime.com/installation
                 </a>
@@ -90,7 +90,8 @@ export default function Installation() {
                       src={
                         baseUrl + "/assets/images/Installation/DragAndDrop.png"
                       }
-                      layout="fill"
+                      height="200px"
+                      width="500px"
                       alt="Exception screenshot"
                     ></Image>
                   </p>
@@ -135,11 +136,15 @@ export default function Installation() {
                 <p>
                   Choose the **what is already installed ** and click on it. It
                   shows the installed extensions in KNIME.{" "}
-                  <img
-                    src="https://github.com/pm4knime/pm4knime-document/raw/master/images/PM4KNIME-update.png"
-                    alt="image"
-                    className="img-fluid img-shadow"
-                  />
+                  <Image
+                    src={
+                      baseUrl +
+                      "/assets/images/Installation/PM4KNIME-update.png"
+                    }
+                    height="300px"
+                    width="500px"
+                    alt="Exception screenshot"
+                  ></Image>
                 </p>
               </li>
               <li>
@@ -169,18 +174,26 @@ export default function Installation() {
               category <code>Process Mining</code> in{" "}
               <strong>Node Repository</strong>. By clicking on the name, we can
               get an overview of this extension PM4KNIME. <br></br>
-              <img
-                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/PM4KNIME-category-inKNIME.PNG"
-                alt="image"
-                className="img-fluid img-shadow"
-              />{" "}
+              <Image
+                src={
+                  baseUrl +
+                  "/assets/images/Installation/PM4KNIME-category-inKNIME.png"
+                }
+                height="500px"
+                width="300px"
+                alt="Exception screenshot"
+              ></Image>
               <br></br> On the right part of the KNIME, some details information
               is given on the <code>Process Mining</code>.<br></br>{" "}
-              <img
-                src="https://github.com/pm4knime/pm4knime-document/raw/master/images/pm4knime-category-description.PNG"
-                alt="image"
-                className="img-fluid img-shadow"
-              />
+              <Image
+                src={
+                  baseUrl +
+                  "/assets/images/Installation/pm4knime-category-description.png"
+                }
+                height="300px"
+                width="500px"
+                alt="Exception screenshot"
+              ></Image>
             </p>
             <h2>&nbsp;</h2>
             <h2>KNIME Server Installation</h2>

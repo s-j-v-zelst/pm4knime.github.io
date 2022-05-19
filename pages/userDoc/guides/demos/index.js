@@ -9,7 +9,7 @@ export default function IntroductionDemos() {
       <div className="container">
         <div className="section">
           <div className="row-userDoc">
-            <h1>Installation Instructions</h1>
+            <h1>Introduction to Demos</h1>
 
             <p>
               This section demonstrates the usage of PM4KNIME by giving concrete
