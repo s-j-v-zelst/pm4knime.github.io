@@ -126,11 +126,7 @@ export default function Home() {
             <div className="col-12">
               <h1 className="section-header">
                 <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
-                Download in KNIME hub
-                  <i
-                    className="fas fa-download ml-3 icon-color"
-                    style={{ marginLeft: 10 }}
-                  ></i>
+                Download from the KNIME hub
                 </a>
               </h1>
             </div>
