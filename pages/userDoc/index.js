@@ -39,15 +39,15 @@ export default function UserDocStartingPage() {
               </p>
               <ul>
                 <li>
-                  Large-scale and repetitive experiments. Process mining
-                  experiments in the analytical workflow context can be executed
+                  <i>Design of large-scale and repetitive analyses</i>. Process mining
+                  algorithms embedded in KNIMEl workflow can be executed
                   with just one click.
                 </li>
                 <li>
-                  Reuse and Share of process mining analysis. With predefined
-                  configuration and input, those workflows reproduce the same
-                  result. Moreover, KNIME eases the share of process mining
-                  analysis by sharing the workflows.
+                  <i>Reuse and Sharing of process mining analysis</i>. With predefined
+                  configurations and input, the workflows reproduce the same
+                  results. Moreover, KNIME eases sharing of process mining
+                  analyses by sharing the workflows.
                 </li>
                 <li>
                   Ability to use process mining techniques in KNIME. With
