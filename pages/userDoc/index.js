@@ -32,29 +32,10 @@ export default function UserDocStartingPage() {
                 <a href="https://www.knime.com/" rel="nofollow">
                   KNIME
                 </a>{" "}
-                is designed to compose and execute a series of data manipulation
-                steps, namely a workflow, in scientific application. By
-                combining this analytical workflow with process mining domain,
+                is designed to compose and execute a series of data transformation steps
+                steps as a workflow. By combining this with process mining algorithms,
                 it enables the support of large-scale experiments in process
-                mining.
-              </p>
-              <p>
-                Driven by this motivation, PM4KNIME is started by the group{" "}
-                <a
-                  href="https://www.pads.rwth-aachen.de/cms/~pnbx/PADS/"
-                  rel="nofollow"
-                >
-                  Process And Data Science
-                </a>{" "}
-                at the university RWTH Aachen. Developed as a community
-                extension for KNIME, PM4KNIME integrates ProM into KNIME by
-                wrapping ProM plugins as operational nodes in KNIME and is
-                continued by Frauhofer FIT Group. Those nodes can connect each
-                other and build a workflow to complete process mining tasks.
-              </p>
-              <p>
-                By bring process mining techniques into KNIME, PM4KNIME benefits
-                the users from the following perspectives:
+                mining. As such, PM4KNIME provides the following key features:
               </p>
               <ul>
                 <li>
