@@ -48,18 +48,8 @@ export default function Home() {
               </p>
 
               <p>
-                KNIME is designed to compose and execute a sequence of data
-                manipulation steps, namely a workflow, in scientific
-                applications. By combining this with the process mining domain,
-                it enables the support of large-scale experiments in process
-                mining.
-              </p>
-              <p>
-                As a community extension for KNIME, PM4KNIME integrates the
-                Process Mining tools from ProM into the KNIME Analytics
-                Platform. Classical plugins from ProM are wrapped as node
-                extensions in KNIME and can be used to build a complete process
-                mining workflow.
+                KNIME is designed to compose and execute a sequence of data manipulation steps, i.e., a data transformation workflow. 
+                Combined with process mining technology, it supports large-scale process mining analytics.
               </p>
             </div>
           </div>
