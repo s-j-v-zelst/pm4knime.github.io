@@ -77,20 +77,9 @@ const NavbarFull = ({ style }) => {
               <NavDropdown.Item>Log Manipulation</NavDropdown.Item>
             </Link>
             <NavDropdown.Divider />
-            <Link href="/userDoc/guides/demos/repetiveExecution" passHref>
-              <NavDropdown.Item>
-                Repetitive Execution of Workflow (Legacy does not work)
-              </NavDropdown.Item>
-            </Link>
-            <Link href="/userDoc/guides/demos/parameterOptimization" passHref>
-              <NavDropdown.Item>
-                Parameter Optimization (Legacy does not work)
-              </NavDropdown.Item>
-            </Link>
             <Link href="/userDoc/guides/demos/organizationOnWorkflow" passHref>
               <NavDropdown.Item>Organization on Workflow</NavDropdown.Item>
             </Link>
-            <NavDropdown.Divider />
             <Link href="/userDoc/guides/demos/knimeNodes" passHref>
               <NavDropdown.Item>KNIME Nodes</NavDropdown.Item>
             </Link>
