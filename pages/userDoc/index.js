@@ -11,9 +11,8 @@ export default function UserDocStartingPage() {
           <div>
             <div className="row-userDoc">
               <p>
-                Welcome to the PM4KNIME end user documentation! This end user
-                documentation is created along the project PM4KNIME to provide
-                users guide on installing, applying, and enhancing PM4KNIME.
+                Welcome to the PM4KNIME user documentation! This user
+                documentation provides infomation regarding PM4KNIME installation and applicaton.
               </p>
               <h1>
                 {" "}
@@ -23,59 +22,32 @@ export default function UserDocStartingPage() {
               </h1>
               <h1>Project Description</h1>
               <p>
-                In the last decades, process mining, as the bridge between data
+                In the last decades, process mining, a technology bridging data
                 mining and business process management, has gained more and more
-                attention from both the academy and industries. Multiple tools
-                are developed to support process mining techniques. Among them,{" "}
-                <a href="http://www.promtools.org/doku.php" rel="nofollow">
-                  ProM
-                </a>{" "}
-                is an open-source framework to support process mining
-                techniques. &nbsp;With over 600 plugins, it is the most popular
-                scientific process mining tool nowadays. However, configured by
-                users with the graphical user interface before each execution,
-                ProM has drawbacks to conduct, share or reuse large-scale or
-                repetitive experiments.
+                attention from both academy and industry. Multiple tools
+                are developed to support process mining techniques. 
+                However, none of these existing tools provide means to design, save and manipulated structured process minig analyses.
               </p>
               <p>
                 <a href="https://www.knime.com/" rel="nofollow">
                   KNIME
                 </a>{" "}
-                is designed to compose and execute a series of data manipulation
-                steps, namely a workflow, in scientific application. By
-                combining this analytical workflow with process mining domain,
+                is designed to compose and execute a series of data transformation steps
+                steps as a workflow. By combining this with process mining algorithms,
                 it enables the support of large-scale experiments in process
-                mining.
-              </p>
-              <p>
-                Driven by this motivation, PM4KNIME is started by the group{" "}
-                <a
-                  href="https://www.pads.rwth-aachen.de/cms/~pnbx/PADS/"
-                  rel="nofollow"
-                >
-                  Process And Data Science
-                </a>{" "}
-                at the university RWTH Aachen. Developed as a community
-                extension for KNIME, PM4KNIME integrates ProM into KNIME by
-                wrapping ProM plugins as operational nodes in KNIME and is
-                continued by Frauhofer FIT Group. Those nodes can connect each
-                other and build a workflow to complete process mining tasks.
-              </p>
-              <p>
-                By bring process mining techniques into KNIME, PM4KNIME benefits
-                the users from the following perspectives:
+                mining. As such, PM4KNIME provides the following key features:
               </p>
               <ul>
                 <li>
-                  Large-scale and repetitive experiments. Process mining
-                  experiments in the analytical workflow context can be executed
+                  <i>Design of large-scale and repetitive analyses</i>. Process mining
+                  algorithms embedded in KNIMEl workflow can be executed
                   with just one click.
                 </li>
                 <li>
-                  Reuse and Share of process mining analysis. With predefined
-                  configuration and input, those workflows reproduce the same
-                  result. Moreover, KNIME eases the share of process mining
-                  analysis by sharing the workflows.
+                  <i>Reuse and Sharing of process mining analysis</i>. With predefined
+                  configurations and input, the workflows reproduce the same
+                  results. Moreover, KNIME eases sharing of process mining
+                  analyses by sharing the workflows.
                 </li>
                 <li>
                   Ability to use process mining techniques in KNIME. With
