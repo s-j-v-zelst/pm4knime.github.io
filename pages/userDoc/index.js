@@ -47,44 +47,11 @@ export default function UserDocStartingPage() {
                   analyses by sharing the workflows.
                 </li>
                 <li>
-                  Ability to use process mining techniques in KNIME. With
-                  PM4KNIME, KNIME users avoid the transfer of different
+                  <i>Directly applying process mining in KNIME</i> With
+                  PM4KNIME, KNIME users avoid the need to transfer event data to different
                   platforms.
                 </li>
-                <li>
-                  Ability to use KNIME data analytic extensions. KNIME provides
-                  nodes to support the preprocess and post-process of data for
-                  the process mining algorithm.
-                </li>
-              </ul>
-              <h1>Documentation Sections</h1>
-              <ul>
-                <li>
-                  <p>
-                    Normal User: This section provides the manual for normal
-                    users with KNIME. It is divided into the following parts.
-                  </p>
-                  <ul>
-                    <li>project introduction</li>
-                    <li>how to install PM4KNIME</li>
-                    <li>how to use PM4KNIME</li>
-                    <li>how to use KNIME server</li>
-                  </ul>
-                </li>
-                <li>
-                  <p>
-                    Developer: This part aims to guide developers to understand
-                    PM4KNIME better and reducing effort and pain during
-                    programming. It includes the following parts.
-                  </p>
-                  <ul>
-                    <li>how to fork and build project?</li>
-                    <li>how to add node extension into the project?</li>
-                    <li>how to manage the dependency?</li>
-                    <li>how to release a new version of this project?</li>
-                  </ul>
-                </li>
-              </ul>
+              </ul>              
             </div>
           </div>
         </div>
