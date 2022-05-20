@@ -20,7 +20,7 @@ export default function Home() {
               />
               <h1 className="section-header">PM4KNIME</h1>
               <h2 className="mt-n3 mb-5">
-                State-of-the-art process mining in KNIME Analytics Platform
+                State-of-the-art process mining in the KNIME Analytics Platform
               </h2>
 
               <p>
@@ -31,21 +31,20 @@ export default function Home() {
                 >
                   process mining research group
                 </a>{" "}
-                of{" "}
+                of the {" "}
                 <a href="http://fit.fraunhofer.de/" target="_blank">
-                  Fraunhofer FIT
+                  Fraunhofer Institute for Applied Information Technology
                 </a>
-                , for the leading open-source platform, to data science
-                solutions,{" "}
+                , for the leading open-source data science platform{" "}
                 <a
                   href="https://www.knime.com/knime-analytics-platform"
                   target="_blank"
                 >
-                  KNIME Analytics Platform
+                  KNIME
                 </a>
                 . PM4KNIME implements several state-of-the-art process mining
-                algorithms in a user-friendly manner and is{" "}
-                <i>free of charge for non-commercial and academic use</i>.
+                algorithms in a user-friendly manner and is distributed under the{" "}
+                <i>Apache 2.0 License</i>.
               </p>
 
               <p>
