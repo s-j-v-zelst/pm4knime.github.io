@@ -11,9 +11,8 @@ export default function UserDocStartingPage() {
           <div>
             <div className="row-userDoc">
               <p>
-                Welcome to the PM4KNIME end user documentation! This end user
-                documentation is created along the project PM4KNIME to provide
-                users guide on installing, applying, and enhancing PM4KNIME.
+                Welcome to the PM4KNIME user documentation! This user
+                documentation provides infomation regarding PM4KNIME installation and applicaton.
               </p>
               <h1>
                 {" "}
@@ -23,19 +22,11 @@ export default function UserDocStartingPage() {
               </h1>
               <h1>Project Description</h1>
               <p>
-                In the last decades, process mining, as the bridge between data
+                In the last decades, process mining, a technology bridging data
                 mining and business process management, has gained more and more
-                attention from both the academy and industries. Multiple tools
-                are developed to support process mining techniques. Among them,{" "}
-                <a href="http://www.promtools.org/doku.php" rel="nofollow">
-                  ProM
-                </a>{" "}
-                is an open-source framework to support process mining
-                techniques. &nbsp;With over 600 plugins, it is the most popular
-                scientific process mining tool nowadays. However, configured by
-                users with the graphical user interface before each execution,
-                ProM has drawbacks to conduct, share or reuse large-scale or
-                repetitive experiments.
+                attention from both academy and industry. Multiple tools
+                are developed to support process mining techniques. 
+                However, none of these existing tools provide means to design, save and manipulated structured process minig analyses.
               </p>
               <p>
                 <a href="https://www.knime.com/" rel="nofollow">
