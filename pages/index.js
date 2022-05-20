@@ -69,20 +69,17 @@ export default function Home() {
           </div>
           <div className="row  justify-content-between text-center">
             <div className="col-md-3 m-3 p-3 border rounded feature-box lead">
-              <i className="fas fa-random fa-2x"></i>
+              <i className="fas fa-rocket-launch fa-2x"></i>
               <br />
               <div className="mt-3">
-                Get a selection of <strong> classical </strong> ProM plugins in
-                KNIME
+                Get a selection of the most <strong> powerful process mining algorithms </strong> in KNIME.
               </div>
             </div>
 
             <div className="col-md-3  m-3 p-3 border rounded feature-box lead">
               <i className="fas fa-file-import fa-2x"></i>
               <div className="mt-3">
-                <strong>Create</strong> Large-scale and repetitive experiments.
-                Process mining experiments in the analytical workflow context
-                can be executed with just one click. <br />
+                <strong>Create</strong> Large-scale and repetitive analytics, fused with process mining.
               </div>
             </div>
 
@@ -128,8 +125,8 @@ export default function Home() {
           <div className="row">
             <div className="col-12">
               <h1 className="section-header">
-                Download in KNIME hub
                 <a href="https://hub.knime.com/pm4knime/extensions/org.pm4knime.feature/latest">
+                Download in KNIME hub
                   <i
                     className="fas fa-download ml-3 icon-color"
                     style={{ marginLeft: 10 }}
