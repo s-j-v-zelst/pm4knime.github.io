@@ -69,7 +69,7 @@ export default function Home() {
           </div>
           <div className="row  justify-content-between text-center">
             <div className="col-md-3 m-3 p-3 border rounded feature-box lead">
-              <i className="fas fa-rocket-launch fa-2x"></i>
+              <i className="fas fa-rocket fa-2x"></i>
               <br />
               <div className="mt-3">
                 Get a selection of the most <strong> powerful process mining algorithms </strong> in KNIME.
