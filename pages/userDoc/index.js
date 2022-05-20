@@ -22,20 +22,17 @@ export default function UserDocStartingPage() {
               </h1>
               <h1>Project Description</h1>
               <p>
-                In the last decades, process mining, a technology bridging data
-                mining and business process management, has gained more and more
-                attention from both academy and industry. Multiple tools
-                are developed to support process mining techniques. 
-                However, none of these existing tools provide means to design, save and manipulated structured process minig analyses.
+                In the last decades, process mining, a technology bridging data mining and business process management, has gained more and more attention from both academia and industry. 
+                Multiple tools are developed to support process mining techniques. 
+                However, none of these existing tools provide the means to design, save, and manipulated structured process mining analyses.
               </p>
               <p>
                 <a href="https://www.knime.com/" rel="nofollow">
                   KNIME
                 </a>{" "}
-                is designed to compose and execute a series of data transformation steps
-                steps as a workflow. By combining this with process mining algorithms,
-                it enables the support of large-scale experiments in process
-                mining. As such, PM4KNIME provides the following key features:
+                is designed to compose and execute a series of data transformation steps as a workflow. 
+                Combining this with process mining algorithms enables the support of large-scale experiments in process mining. 
+                As such, PM4KNIME provides the following key features:
               </p>
               <ul>
                 <li>
