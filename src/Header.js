@@ -92,7 +92,7 @@ const Navigation = () => {
                 id="collasible-nav-dropdown"
               >
                 <Link href="/userDoc" passHref>
-                  <NavDropdown.Item>Home</NavDropdown.Item>
+                  <NavDropdown.Item>Documentation Home</NavDropdown.Item>
                 </Link>
                 <Link href="/userDoc/guides" passHref>
                   <NavDropdown.Item>Introduction Guides</NavDropdown.Item>
