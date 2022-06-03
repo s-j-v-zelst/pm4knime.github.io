@@ -35,7 +35,7 @@ const NavbarFull = ({ style }) => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav>
           <Link href={"/userDoc/"} passHref>
-            <Nav.Link>Home</Nav.Link>
+            <Nav.Link>Introduction</Nav.Link>
           </Link>
         </Nav>
         <Nav>
