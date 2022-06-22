@@ -15,7 +15,7 @@ including teaching and research at universities, colleges and other educational 
 at non-profit research institutions, and personal non-profit purposes. For using the Program for 
 commercial purposes, including but not restricted to consulting activities, design of commercial 
 hardware or software networking products, and a commercial entity participating in research 
-projects, you have to contact Fraunhofer FIT (pmtk@fit.fraunhofer.de) for an appropriate license.
+projects, you have to contact Fraunhofer FIT (pm4knime@fit.fraunhofer.de) for an appropriate license.
 Permission is also granted to use the Program for a reasonably limited period of time for the purpose 
 of evaluating its usefulness for a particular purpose.
 
